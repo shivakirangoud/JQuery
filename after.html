@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>after</title>
+</head>
+<body>
+<p id="abbb">Lorem ipsum dolor sit amet</p>
+<button id="abc">insert after</button>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#abc").click(function(){
+		$("p").after("<i>after</i>");
+
+	});
+
+});	
+	
+
+
+
+</script>
+</html>

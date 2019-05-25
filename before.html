@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>before</title>
+</head>
+<body>
+<p id="abbb">Lorem ipsum dolor sit amet</p>
+<button id="abc">insert before</button>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#abc").click(function(){
+		$("#abbb").before("<i>before</i>");
+});
+});	
+</script>
+</html>

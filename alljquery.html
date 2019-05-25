@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Examples on sheet</title>
+</head>
+<body>
+<p>Hey</p>
+<p>Hello
+<span>descendent</span>
+<span>child</span></p>
+<span>adjacent</span>
+<span>general sibling</span>
+<ul>
+<li>List1</li>
+<li>List2</li>
+<li>List3</li>
+<li>List4</li>
+</ul>
+<a href="" target="_blank">Link1</a>
+<a href="">Link2</a><div></div>
+<form>
+name:<input type="text" name="" required="enter name"><div></div><div></div>
+pwd:<input type="password" name="" required="enter password"><div></div><div></div>
+<button type="button" >login</button>
+
+</form><br>
+<table border="1px">
+<tr>
+<th>No</th>
+<th>Name</th>
+</tr>
+<tr>
+<td>1.</td>
+<td>Shiva</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Sai</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Ravi</td>
+</tr>
+</table>
+<button id="btn1">Table</button>
+
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("*").css("background","green");
+  
+$("p:first").css("color","red");
+$("p span").css("color","white");
+$("p+span").css("font-family","fantasy");
+$("p>span").css("font-family","sans-serif");
+$("p~span").css("font-size","20px");
+$("ul li:first").css("list-style-type","none");
+$("ul li:first-child").css("color","white");
+$("ul li:nth-child(3)").css("color","green");
+$("[href]").css("text-decoration","none");
+$("a[target='_blank']").css("color","white");
+$("a[target!='_blank']").css("color","red");
+$(":input").css("border","2px solid red");
+$(":button").css("background","lightgray");
+
+
+$("tr:even").css("background","yellow");
+
+});
+
+
+
+
+
+
+
+</script>
+
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Examples on sheet</title>
+</head>
+<body>
+
+
+
+<table border="1px">
+<tr>
+<th>No</th>
+<th>Name</th>
+</tr>
+<tr>
+<td>1.</td>
+<td>Shiva</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Sai</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Ravi</td>
+</tr>
+</table>
+
+
+<h4>jonny bhai
+<span>
+<h4>parent</h4>
+<h4>demo</h4>
+</span>
+</h4>
+
+<button id="btn1">Table</button>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+
+
+
+$(document).ready(function(){
+$("#btn1").click(function(){
+   	$("tr:even").css("background","red");
+   	$("span:parent").css("color","orange");
+$("span:contains('demo')").css("color","green");
+   });
+
+});
+$(document).ready(function(){
+$("#btn1").click(function(){
+   	$("tr:odd").css("background","red");
+   });
+
+});
+$(document).ready(function(){
+
+});
+
+
+</script>
+
+</html>

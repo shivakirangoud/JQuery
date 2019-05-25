@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>attributes</title>
+</head>
+<body>
+<form>
+	<label>name:<input type="text"></label>
+	<label>password:<input type="password"></label>
+	<label>number:<input type="number"></label>
+	<label>file:<input type="file"></label>
+	<input type="submit"></label>
+</form>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('input[type="text"]').css("background","yellow");
+		$('input[type="password"]').css("background","green");
+        $('input[type="number"]').css("background","red");
+		$('input[type="file"]').css("background","blue");
+	});
+</script>
+</html>
